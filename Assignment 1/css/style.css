@@ -1,24 +1,17 @@
 body{
 	margin:0px;
 	padding:0px;
-	background-color:#0B7DEE;
-	height: 150vh;
-	
+	background-color:brown;
 }
-.clearfix{
-	clear: both;
-}
+
 .resume-box{
 	width: 800px;
 	height: 1000px;
 	margin: 0 auto;
-	background-color: white;
-}
-.box-outer{
-	padding:30px;
+	background-color:white;
 }
 .box-1{
-	background-color: #26252d;
+	background-color:black;
 	width: 35%;
 	float: left;
 	height: 1000px;
@@ -33,115 +26,37 @@ body{
 	width: 100%;
 }
 .content{
-	padding: 15px;
+	padding: 20px;
 }
 h1{
 	color: #ceced1;
     font-family: system-ui;
-    font-weight: 300;
-    text-transform: uppercase;
-
+    font-weight: 400;
 }
 p{
 	color: #ceced1;
     font-family: system-ui;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
    
 }
 
-#progress {
-    background: #333;
-    border-radius: 13px;
-    height: 8px;
-    width: 100%;
-    padding: 3px;
+.intro{
+    text-align: center;
 }
 
-#progress:after {
-    content: '';
-    display: block;
-    background: orange;
-    width: 50%;
-    height: 100%;
-    border-radius: 9px;
-}
-#progress1 {
-    background: #333;
-    border-radius: 13px;
-    height: 8px;
-    width: 100%;
-    padding: 3px;
-}
-
-#progress1:after {
-    content: '';
-    display: block;
-    background: orange;
-    width: 40%;
-    height: 100%;
-    border-radius: 9px;
-}
-#progress2 {
-    background: #333;
-    border-radius: 13px;
-    height: 8px;
-    width: 100%;
-    padding: 3px;
-}
-
-#progress2:after {
-    content: '';
-    display: block;
-    background: orange;
-    width: 80%;
-    height: 100%;
-    border-radius: 9px;
-}
-
-#progress3 {
-    background: #333;
-    border-radius: 13px;
-    height: 8px;
-    width: 100%;
-    padding: 3px;
-}
-
-#progress3:after {
-    content: '';
-    display: block;
-    background: orange;
-    width: 90%;
-    height: 100%;
-    border-radius: 9px;
-}
-.intro{text-align: center;}
 .intro h1{
 	font-size: 40px;
 	font-weight: bold;
 	color: #26252d;
 
 }
-.hr{
-	height: 15px;
-    border: none;
-    background-color: yellow;
-    margin: -45px 20px;
-}
+
 .intro-p{
 	color: #7d7d7d;
     font-family: system-ui;
-    font-weight: 300;
     font-size: 15px;
-    margin-top: 13%!important;
-    font-weight: 400;
-}
-.intro p{
-	color: #7d7d7d;
-    font-family: system-ui;
-    font-weight: 300;
-    font-size: 15px;
-    margin-top: -5px;
+    margin-top: 50px;
     font-weight: 400;
 }
 .content-2{
@@ -151,20 +66,17 @@ p{
 	color: #26252d;
     font-family: system-ui;
     font-weight: 400;
-    text-transform: uppercase;
     margin:0px;
 }
 .para-1{
-	font-size: 16px;
-    text-transform: uppercase;
+	font-size: 17px;
     color: #26252d;
     font-weight: 400;
     margin: 5px 0px;
     margin-top: 10px;
 }
 .para-2{
-	font-size: 14px;
-	text-transform: capitalize;
+	font-size: 15px;
     color: #7d7d7d;
     font-weight: 400;
     margin-bottom: 20px;
