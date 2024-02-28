@@ -15,12 +15,14 @@ body{
 	width: 35%;
 	float: left;
 	height: 1000px;
+
 }
 
 .box-2{
 	width: 60%;
 	float: left;
 	padding: 20px;
+
 }
 .profile{
 	width: 100%;
@@ -49,6 +51,7 @@ p{
 	font-size: 40px;
 	font-weight: bold;
 	color: #26252d;
+	background-color: yellow;
 
 }
 
