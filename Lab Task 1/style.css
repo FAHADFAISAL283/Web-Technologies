@@ -1,0 +1,45 @@
+#main{
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    min-height: 150px;
+
+  }
+  #main img{
+    padding-left: 20px;
+  }
+  .form-inline{
+    display: flex;
+    align-items: center;
+    padding-left: 25%
+  }
+
+  .form-inline .form-control{
+    width: 500px;
+  }
+ #image1{
+  height: 70%;
+ }
+ #image2{
+  height: 80%;
+  padding-left: 30%;
+ }
+#login{
+margin-left: 40px;
+border-radius: 100px;
+height: 60px;
+width: 100px;
+}
+#signup{
+margin-left: 10px;
+border-radius: 100px;
+height: 60px;
+width: 100px;
+}
+
+#contact{
+margin-left: 40px;
+height: 60px;
+width: 100px;
+}
+
