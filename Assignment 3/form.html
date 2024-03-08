@@ -7,7 +7,10 @@
 
 <body>  
   <div class="container">
-    <form>
+    <div class="box">
+    <img src="images/ball.jpg">
+  </div>
+    <form onclick="return validateForm()">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -21,7 +24,7 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button id="done" type="submit" class="btn btn-primary">Submit</button>
+      <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
