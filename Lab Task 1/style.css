@@ -1,29 +1,31 @@
 #main{
     display: flex;
     align-items: center;
-    background-color: bisque;
+    background-color: white;
     min-height: 150px;
 
   }
   #main img{
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .form-inline{
     display: flex;
     align-items: center;
-    padding-left: 25%
+    padding-left: 15%
   }
 
   .form-inline .form-control{
     width: 500px;
   }
- #image1{
-  height: 70%;
- }
- #image2{
-  height: 80%;
-  padding-left: 30%;
- }
+#image1{
+  width: 50%;
+  
+}
+#image2{
+  width: 550px;
+  height: 90%;
+  padding-right: 20%;
+}
 #login{
 margin-left: 40px;
 border-radius: 100px;
@@ -43,3 +45,21 @@ height: 60px;
 width: 100px;
 }
 
+#logo{
+  width: 200px;
+}
+#bat{
+
+  width: 250px;
+}
+
+#football{
+
+  width: 250px;
+  height: 450px;
+}
+#racket{
+
+  width: 250px;
+  height: 450px;
+}
