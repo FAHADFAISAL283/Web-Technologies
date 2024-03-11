@@ -1,12 +1,26 @@
 .container {
-  background-color: beige;
+  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px
+  margin-top: 10%;
+  height: 500px
 }
+
+.logo{
+ 
+  height: 100%;
+  width: 50%;
+}
+
+
+.formg{
+ position: relative;
+ left:-25% ;
+  
+}
+
 .box{
-  padding-top: 30%;
-	height: 1000px;
-  padding-right: 150px;
+  height: 400px;
+  padding-right: 30%;
 }
