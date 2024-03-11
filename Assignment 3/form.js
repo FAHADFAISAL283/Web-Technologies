@@ -8,8 +8,9 @@ function openwid(){
 function validateForm() {
     var email = document.getElementById("exampleInputEmail1").value;
     var password = document.getElementById("exampleInputPassword1").value;
+    var message = document.getElementById("examplemessage").value
 
-    if (email.trim() === '' || password.trim() === '') {
+    if (email.trim() === '' || password.trim() === '' || message.trim() === '') {
       alert("Please fill in all fields");
       return false;
     }
