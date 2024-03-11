@@ -63,3 +63,29 @@ width: 100px;
   width: 250px;
   height: 450px;
 }
+
+.carousel-item{
+  height:400px;
+}
+.c-image{
+  height: 100%;
+  object-fit: cover;
+}
+#image1 {
+  padding-right: 15px; 
+  margin-bottom: 15px; 
+  height: 100%;
+  
+}
+
+.bat,
+.football,
+.racket {
+  height: 70%;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 15px; 
+        margin-right: 20px; 
+
+}
+

@@ -1,0 +1,26 @@
+.container {
+  background-color: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  height: 500px
+}
+
+.logo{
+ 
+  height: 100%;
+  width: 50%;
+}
+
+
+.formg{
+ position: relative;
+ left:-25% ;
+  
+}
+
+.box{
+  height: 400px;
+  padding-right: 30%;
+}
