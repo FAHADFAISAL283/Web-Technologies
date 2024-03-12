@@ -6,17 +6,18 @@ function openwid(){
 }
 
 function validateForm() {
-    var email = document.getElementById("exampleInputEmail1").value;
-    var name = document.getElementById("examplename").value;
-    var message = document.getElementById("examplemessage").value
+  var email = $("#exampleInputEmail1").val();
+  var name = $("#examplename").val();
+  var message = $("#examplemessage").val();
 
-    if (email.trim() === '' || name.trim() === '' || message.trim() === '') {
-      alert("Please fill in all fields");
-      return false;
-    }
-
-    return true;
+  if ($.trim(email) === '' || $.trim(name) === '' || $.trim(message) === '') {
+    alert("Please fill in all fields");
+    return false;
   }
+
+  return true;
+}
+
 
 
 
