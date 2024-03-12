@@ -7,10 +7,10 @@ function openwid(){
 
 function validateForm() {
     var email = document.getElementById("exampleInputEmail1").value;
-    var password = document.getElementById("exampleInputPassword1").value;
+    var name = document.getElementById("examplename").value;
     var message = document.getElementById("examplemessage").value
 
-    if (email.trim() === '' || password.trim() === '' || message.trim() === '') {
+    if (email.trim() === '' || name.trim() === '' || message.trim() === '') {
       alert("Please fill in all fields");
       return false;
     }
