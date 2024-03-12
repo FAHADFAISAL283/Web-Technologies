@@ -23,7 +23,7 @@
 }
 
 #login{
-margin-left: 50px;
+margin-left: 20px;
 border-radius: 100px;
 height: 60px;
 width: 100px;
@@ -31,7 +31,7 @@ width: 100px;
 
 #signup{
 
-  margin-right: 200px;
+margin-right: 200px;
 margin-left: 10px;
 border-radius: 100px;
 height: 60px;
@@ -39,13 +39,14 @@ width: 100px;
 }
 
 #contact{
-margin-left: 40px;
 height: 60px;
 width: 100px;
 }
 
+
 #logo{
-  width: 100px;
+  width: 320px;
+  margin-right: -100px;
 }
 
 .carousel-item{
