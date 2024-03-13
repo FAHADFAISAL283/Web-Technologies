@@ -41,6 +41,8 @@ width: 100px;
 #contact{
 height: 60px;
 width: 100px;
+position: absolute;
+left: 90%;
 }
 
 
