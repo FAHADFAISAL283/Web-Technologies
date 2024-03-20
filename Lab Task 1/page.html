@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raw Sports.Pk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
@@ -18,8 +17,8 @@
             <input class="form-control " type="search" placeholder="Search" aria-label="Search">
             <button id="s1" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <button id="login" class="btn btn-primary">Login</button>
-        <button id="signup" class="btn btn-success">Sign Up</button>
+        <button id="login" class="btn btn-primary">Login/Signup</button>
+      
         <button id="contact" type="button" class="btn btn-outline-dark ml-auto">Contact Us</button>
 </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -93,6 +92,83 @@
             </div>
         </div>
     </div>
+    
+    <!-- Login  form -->
+<section class="home">
+    <div class="form-container ">
+      <i class="fa fa-times form-close" aria-hidden="true"></i>
+    
+            <div class="login-form">
+                <form action="#" >
+                  <h2>Login</h2>
+                  <div class="mb-3 inputbox">
+                    
+                    <input name="Email" class="form-control" id="exampleInputName" placeholder="Enter Your Email">
+                    <i class="fa fa-envelope ml-2 emial " ></i>
+                  </div>
+    
+                  <div class="mb-3 inputbox">
+                    <input type="password" class="form-control" id="exampleInputpass" placeholder="Enter Your Password">
+                    <i class="fa fa-lock Password Lock"></i>
+                   
+                  </div>
+                 <div class="opt-field">
+                    <span class="checkbox">
+                      <input type="checkbox" id="check">
+                      <label for="check">Remember me</label>
+    
+                      <a href="#"> Forgot Password?</a>
+                    </span>
+                 </div>
+                  <div  class="mb-3 ">
+                    <button  id="login-btn" class="btn btn-primary button" >Login </button>
+                    <div>
+                      Don't Have An Account? <a href="#" id="signup-link">Sign Up</a>  </div>
+                  </div>
+                  
+                </form>
+             </div>
+    
+             <!-- Signup form -->
+    
+      
+             <div class=" form Signup-form">
+              <form action="#" >
+                <h2>Sign Up</h2>
+                <div class="mb-3 inputbox">
+                  
+                  <input name="Email" class="form-control" id="exampleInputName" placeholder="Enter Your Email">
+                  <i class="fa fa-envelope ml-2 emial " ></i>
+                </div>
+    
+                <div class="mb-3 inputbox">
+                  <input type="password" class="form-control" id="exampleInputpass" placeholder="Enter Your Password">
+                  <i class="fa fa-lock Password Lock"></i>
+                </div>
+    
+                <div class="mb-3 inputbox">
+                  <input type="password" class="form-control" id="exampleInputpass" placeholder="Confirm Your Password">
+                  <i class="fa fa-lock Password Lock"></i>
+                </div>
+    
+               <div class="opt-field">
+                  <span class="checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+    
+                  </span>
+               </div>
+                <div  class="mb-3 signup-btn">
+                  <button  id="login-btn" class="btn btn-primary button" >SignUp </button>
+                  <div>
+                    Already Have An Account? <a href="#" id="login-link">Login </a>  </div>
+                </div>
+                
+              </form>
+    
+    </div>
+    
+    </section>
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
