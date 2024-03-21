@@ -44,6 +44,33 @@ function validateForm() {
    form_container.classList.remove("active");
   })
 
+  function validateLoginForm(){
+    var email = document.getElementById("exampleInputName").value;
+    var password = document.getElementById("exampleInputpass").value;
+
+    if (email.trim() === "" || password.trim() === "") {
+        alert("Please enter both email and password");
+        return false;
+    }
+    return true;
+  }
+
+function validateSignUpForm(){
+    var email = document.getElementById("exampleInputName").value;
+    var password = document.getElementById("exampleInputpass").value;
+    var confirmPassword = document.getElementById("exampleInputpass1").value;
+
+    if (email.trim() === "" || password.trim() === "" || confirmPassword.trim() === "") {
+        alert("Please fill out all fields");
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match");
+    }
+    return true;
+}
+
+
 
 
 

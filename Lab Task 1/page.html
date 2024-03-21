@@ -96,13 +96,12 @@
         </div>
     </div>
     
-    <!-- Login  form -->
 <section class="home">
     <div class="form-container ">
       <i class="fa fa-times form-close" aria-hidden="true"></i>
     
             <div class="login-form">
-                <form action="#" >
+                <form id="loginForm" action="#" onsubmit="return validateLoginForm()">
                   <h2>Login</h2>
                   <div class="mb-3 inputbox">
                     
@@ -124,19 +123,18 @@
                     </span>
                  </div>
                   <div  class="mb-3 ">
-                    <button  id="login-btn" class="btn btn-primary button" >Login </button>
+                    <button  id="login-btn" class="btn btn-primary button">Login </button>
                     <div>
-                      Don't Have An Account? <a href="#" id="signup-link">Sign Up</a>  </div>
+                      Don't Have An Account? <a href="#" id="signup-link">Sign Up</a> 
+                     </div>
                   </div>
                   
                 </form>
              </div>
     
-             <!-- Signup form -->
-    
       
              <div class=" form Signup-form">
-              <form action="#" >
+              <form id="signupForm" action="#"  onsubmit="return validateSignUpForm()" >
                 <h2>Sign Up</h2>
                 <div class="mb-3 inputbox">
                   
@@ -150,7 +148,7 @@
                 </div>
     
                 <div class="mb-3 inputbox">
-                  <input type="password" class="form-control" id="exampleInputpass" placeholder="Confirm Your Password">
+                  <input type="password" class="form-control" id="exampleInputpass1" placeholder="Confirm Your Password">
                   <i class="fa fa-lock Password Lock"></i>
                 </div>
     
@@ -162,7 +160,7 @@
                   </span>
                </div>
                 <div  class="mb-3 signup-btn">
-                  <button  id="login-btn" class="btn btn-primary button" >SignUp </button>
+                  <button  id="login-btn" class="btn btn-primary button">SignUp </button>
                   <div>
                     Already Have An Account? <a href="#" id="login-link">Login </a>  </div>
                 </div>
