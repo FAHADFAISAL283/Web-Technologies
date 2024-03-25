@@ -86,6 +86,7 @@ width: 100px;
   justify-content: center;
   align-items: center;
   border-bottom: 15px solid red ;
+  font-size: 25px;
    
 }
 
@@ -191,4 +192,13 @@ position: relative;
 
 .checkbox input{
   accent-color: blue;
+}
+
+#review{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 47%;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
 }
