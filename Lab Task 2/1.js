@@ -28,14 +28,14 @@ function displayStories() {
       },
     });
   }
-  // Function to delete a story
+  
   function deleteStory() {
     let storyId = $(this).attr("data-id");
     $.ajax({
       url: "https://usmanlive.com/wp-json/api/stories/" + storyId,
       method: "DELETE",
       success: function () {
-        displayStories(); // Refresh the list after deleting a story
+        displayStories(); 
       },
       error: function (error) {
         console.error("Error deleting story:", error);
@@ -54,7 +54,7 @@ function displayStories() {
   
         data: { title, content },
         success: function () {
-          displayStories(); // Refresh the list after creating a new story
+          displayStories(); 
         },
         error: function (error) {
           console.error("Error creating story:", error);
@@ -66,7 +66,7 @@ function displayStories() {
         method: "POST",
         data: { title, content },
         success: function () {
-          displayStories(); // Refresh the list after creating a new story
+          displayStories(); 
         },
         error: function (error) {
           console.error("Error creating story:", error);
@@ -94,12 +94,11 @@ function displayStories() {
     });
   }
   $(document).ready(function () {
-    // Initial display of stories
+
   
     displayStories();
     $(document).on("click", ".btn-del", deleteStory);
     $(document).on("click", ".btn-edit", editBtnClicked);
-    // Create Form Submission
     $("#createForm").submit(handleFormSubmission);
     $("#clearBtn").on("click", function (e) {
       e.preventDefault();

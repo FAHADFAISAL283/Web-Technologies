@@ -1,3 +1,19 @@
-#logo{
-  height: 200px
+#main{
+  background-color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.mb-4{
+  font-size: 50px;
+}
+#name{
+  font-size: 23px;
+}
+#review{
+ font-size: 23px;
+}
+#form{
+  margin-right: 25%;
+  margin-left: 12%;
 }
