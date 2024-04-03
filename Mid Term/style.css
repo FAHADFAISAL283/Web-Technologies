@@ -1,0 +1,39 @@
+#site-name{
+    background-image:url(images/st-masthead--sprite.png);
+    background-size: 530px ;
+    height: 40px;
+    margin-top: 30px ;
+    position: relative;
+    width: 500px;
+    margin-left: 20%;   
+}
+
+#name{
+    margin-left: 54%;
+    margin-top: -3%;
+    color: #465d7f;
+    font-family: SelaneWebSTTwenty;
+}
+.nav-item1{
+    padding-left: 90px;
+}
+.nav-item2{
+    padding-left: 120px;
+}
+.nav-item3{
+    padding-left: 60px;
+}
+#main{
+    position: sticky;
+    top: 0;
+}
+#p1 {
+    font-family: SelaneWebSTTwenty;
+}
+#stories{
+    padding-left: 40px;
+    font-size: 12px;
+}
+#abc{
+    font-size: 16px;
+}
