@@ -70,7 +70,45 @@ function validateSignUpForm(){
     return true;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var shopBySport = document.getElementById("shop-by-sport");
+  var sportsList = document.getElementById("sports-list");
 
+  shopBySport.addEventListener("click", function(event) {
+      event.preventDefault(); 
+      if (sportsList.style.display === "none") {
+          sportsList.style.display = "block";
+      } else {
+          sportsList.style.display = "none";
+      }
+  });
+});
 
+document.addEventListener("DOMContentLoaded", function() {
+  var shopBySportswear = document.getElementById("shop-by-sportswear");
+  var sportswearList = document.getElementById("sportswear-list");
 
+  shopBySportswear.addEventListener("click", function(event) {
+      event.preventDefault(); 
+      if (sportswearList.style.display === "none") {
+          sportswearList.style.display = "block";
+      } else {
+          sportswearList.style.display = "none";
+      }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var shopByAccessories = document.getElementById("shop-by-accessories");
+  var accessoriesList = document.getElementById("accessories-list");
+
+  shopByAccessories.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      if (accessoriesList.style.display === "none") {
+          accessoriesList.style.display = "block";
+      } else {
+          accessoriesList.style.display = "none";
+      }
+  });
+});
 
