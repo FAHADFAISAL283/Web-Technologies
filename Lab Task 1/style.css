@@ -75,6 +75,7 @@ width: 100px;
   border-radius: 10px;
 }
 
+
 .shop-now {
   position: absolute;
   bottom: 160px;
@@ -201,4 +202,28 @@ position: relative;
   height: 50px;
   width: 100px;
   font-size: 20px;
+}
+
+.section-p1{
+  padding: 40px 80px;
+}
+#feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#feature .fe-box{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  border: 2px solid red ;
+}
+
+#feature .fe-box h6{
+  margin-top: 10px;
+}
+
+#feature .fe-box:hover{
+  box-shadow: 20px 20px 34px rgba(10,20,10,0.1);
 }
