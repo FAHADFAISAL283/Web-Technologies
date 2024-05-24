@@ -1,0 +1,24 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <% products.forEach(pro => { %>
+     <tr>
+         <td><%= pro.name %></td>
+         <td><%= pro.price %></td>
+         <td><%= pro.quantity %></td>
+     </tr>
+
+    <% }) %>
+    <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>Amount</td>
+        </tr>
+    </tfoot>
+</table>
