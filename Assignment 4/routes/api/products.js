@@ -2,7 +2,6 @@
 const express = require("express");
 let router = express.Router();
 let Product = require("../../models/Product");
-
 router.post("/api/products", async function (req, res) {
   let data = req.body;
   let product = new Product(data);
