@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="/style.css">
+
+<h1>List of All Products</h1>
+<% console.log("Inside List.ejs File") %>
+<a href="/products/new">Add New Product</a>
+<a href="/cart">Cart</a>
+
+
+
+<div class="products-container">
+    <% for (let index = 0; index < products.length; index++) { %>
+        <div class="product-card">
+            <h2>Name: <%= products[index].name %></h2>
+            <h2>Price: Rs. <%= products[index].price %></h2>
+            <div class="product-actions">
+                <a class="btn" href="/products/add-to-cart/<%= products[index]._id %>">Add to Cart</a>
+                <a class="btn" href="/products/delete/<%= products[index]._id %>">Delete</a>
+                <a class="btn" href="/products/edit/<%= products[index]._id %>">Edit</a>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+<div class="pagination">
+    <% for (let index = 1; index <= totalPages; index++) { %>
+        <li><a href="/products/<%= index %>"><%= index %></a></li>
+    <% } %>
+</div>
+
