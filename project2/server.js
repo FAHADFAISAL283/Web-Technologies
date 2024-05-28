@@ -19,10 +19,7 @@ server.use(expressSession({ secret: "My Secret Key" }));
 server.use(express.static("public"));
 
 server.use(mainSiteMiddleware);
-let productsAPIRouter = require("./routes/api/products");
 const { cookie } = require("express/lib/response");
-
-server.use(productsAPIRouter);
 
 const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)){
