@@ -1,4 +1,3 @@
-
 const express = require("express");
 let router = express.Router();
 let Product = require("../../models/Product");

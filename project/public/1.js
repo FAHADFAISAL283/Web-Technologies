@@ -113,7 +113,8 @@ function displayStories() {
 //for contact us
 
 
-function validateForm() {
+function validateForm(event) {
+    event.preventDefault();
     var email = document.getElementById("exampleInputEmail1").value;
     var name = document.getElementById("examplename").value;
     var message = document.getElementById("examplemessage").value
@@ -122,7 +123,7 @@ function validateForm() {
       alert("Please fill in all fields");
       return false;
     }
-
+    window.location.href = "/";
     return true;
   }
 /*for homepage*/

@@ -2,19 +2,44 @@
 let express = require("express");
 let router = express.Router();
 let Product = require("../models/Product");
+const roleCheck = require("../middlewares/check-role");
+const multer = require("multer");
+const path = require("path");
 
 
-router.get("/new", (req, res) => {
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const uploadsDir = path.join(__dirname, '..', 'uploads');
+    cb(null, uploadsDir); 
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + path.extname(file.originalname)); 
+  }
+});
+const upload = multer({ storage: storage });
+
+router.get("/new", roleCheck, (req, res) => {
   res.render("products/new");
 });
 
-router.post("/new", async (req, res) => {
-  let pro = new Product(req.body);
-  await pro.save();
-  return res.redirect("/products");
+
+router.post("/new", roleCheck,upload.array("images", 5), async (req, res) => {
+  try {
+    const imagePaths = req.files.map(file => "/uploads/" + file.filename);
+    let pro = new Product({
+      name: req.body.name,
+      price: req.body.price,
+      images: imagePaths
+    });
+    await pro.save();
+    return res.redirect("/products");
+  } catch (err) {
+    console.error(err);
+    return res.status(500).send("Error creating product");
+  }
 });
 
-router.get("/delete/:id", async (req, res) => {
+router.get("/delete/:id", roleCheck, async (req, res) => {
   let pro = await Product.findByIdAndDelete(req.params.id);
   return res.redirect("/products");
 });
@@ -27,11 +52,11 @@ router.get("/add-to-cart/:id", async (req, res) => {
   return res.redirect("/products");
 });
 
-router.get("/edit/:id", async (req, res) => {
+router.get("/edit/:id", roleCheck,async (req, res) => {
   let product = await Product.findById(req.params.id);
   return res.render("products/edit", { product });
 });
-router.post("/edit/:id", async (req, res) => {
+router.post("/edit/:id", roleCheck, async (req, res) => {
   let product = await Product.findById(req.params.id);
   product.name = req.body.name;
   product.price = req.body.price;

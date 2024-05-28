@@ -1,6 +1,8 @@
 
 const express = require("express")
 const mongoose = require("mongoose");
+const path = require("path")
+const fs = require("fs")
 let server = express();
 let Product = require("./models/Product");
 server.use(express.json());
@@ -22,29 +24,34 @@ const { cookie } = require("express/lib/response");
 
 server.use(productsAPIRouter);
 
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)){
+    fs.mkdirSync(uploadsDir);
+}
+
 server.get('/', (req, res) => {
   res.render('layout');
 });
 
-server.get('/contact-us', async(req, res) => {
+server.get('/contact-us', checkAuth, async(req, res) => {
   res.render('contact-us');
 });
 
-server.get('/review',  async(req, res) => {
+server.get('/review', checkAuth, async(req, res) => {
   res.render('review');
 });
 
-server.get("/shopbat",  async (req, res) => {
+server.get("/shopbat", checkAuth, async (req, res) => {
   res.render("shopbat");
   
 });
 
-server.get("/shopball",  async(req, res) => {
+server.get("/shopball", checkAuth, async(req, res) => {
   res.render("shopball");
   
 });
 
-server.get("/shopracket", async (req, res) => {
+server.get("/shopracket", checkAuth,async (req, res) => {
   res.render("shopracket");
 
 });
@@ -65,14 +72,16 @@ server.get("/cart", async (req, res) => {
   res.render("cart", { products });
 });
 
-server.use("/products", require("./routes/products"));
+server.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+server.use("/products", checkAuth,require("./routes/products"));
 server.use("/", require("./routes/auth"));
 
 
 server.get("/order",  async (req, res) => {
   res.render("order");
-  
 });
+
 
 server.listen(4000, () => {
     console.log("Server started listening at localhost:4000");
